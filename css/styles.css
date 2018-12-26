@@ -1,0 +1,295 @@
+/* Default */
+nav,header,footer{
+	display:block;
+}
+
+body{
+	line-height:1;
+	margin:0;
+}
+
+label{
+	font-size:35px;
+	font-weight:600px;
+}
+
+p{
+	font-size:25px;
+	line-height:1.2;
+}
+
+article p{
+	font-size:35px;
+	padding:20px;
+	line-height:1;
+}
+
+button{
+	font-size:32px;
+	font-weight:700;
+	color:white;
+	background-color:#0069FF;
+	padding: 15px 60px;
+	text-align:center;
+	display:block;
+	border-radius:7px;
+	margin:5px;
+}
+
+
+
+button.learnmore{
+	display:block;
+	margin:auto;
+	align:center;
+}
+
+.container{
+	width:100%;
+	margin:auto;
+	padding-top:4%;
+	padding-bottom:4%;
+}
+
+.row{
+	width:100%;
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+}
+
+.row:after{
+	display:table;
+	clear:both;
+	content:"";
+}
+
+.col-25p{ width:25%;}
+.col-50p{ width:50%;}
+.col-75p{ width:75%;}
+.col-33p{ width:33.33%;}
+.col-66p{ width:66.66%;}
+.col-100p{ width:100%;}
+
+* {
+	box-sizing:border-box;
+}
+
+/* Nav Bar */
+nav{
+	width:100%;
+	margin:0;
+}
+
+nav ul{
+	background-color:#EEE;
+	overflow:hidden;
+	margin:0;
+	padding:0;
+}
+
+ul.topnav li.menuitem-left{
+	list-style:none;
+	float:left;
+}
+
+ul.topnav li.menuitem-right{
+	list-style:none;
+	float:right;
+}
+
+ul.topnav li a{
+	display:block;
+	text-decoration:none;
+	min-height: 16px;
+	text-align:center;
+	padding:14px;
+	text-transform:uppercase;
+	color:#666;
+}
+
+ul.topnav li a:hover{
+	background-color:#0080ff;
+	color:#FFF;
+}
+
+ul.topnav li.menuitem-dropdown{
+	display:none;
+}
+
+#section-gradient{
+	background: #076DFF;
+	background: -webkit-linear-gradient(#076DFF, #65a5ff);
+	background: -o-linear-gradient(#076DFF, #65a5ff);
+	background: -moz-linear-gradient(#076DFF, #65a5ff);
+	background: linear-gradient(#076DFF, #65a5ff);
+}
+
+.col-left{
+	margin-left:30%;
+}
+
+.col-right{
+	margin-left:15%;
+}
+
+h1.large{
+	font-size: 56px;
+	color:white;
+	margin:0;
+	line-height:70px;
+}
+
+h1.section-header{
+	font-size:45px;
+	text-align:center;
+}
+
+div.box{
+	text-align:center;
+	margin: 24px;
+	padding: 36px 24px 40px 24px;
+	background-color:white;
+	box-shadow:0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.1);
+	-webkit-box-shadow:0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.1);
+	-moz-box-shadow:0 0 0 1px rgba(0,0,0,.15), 0 2px 3px 0 rgba(0,0,0,.1);
+}
+
+div.icon-company img{
+	display:block;
+	margin:auto;
+	padding:5px;
+	width:100%;
+	box-shadow:1px 1px 5px 2px rgba(0,0,0,.3), -2px -2px 3px 4px rgba(0,0,0,.15);
+}
+
+form h2{
+	color:white;
+}
+
+input[type="text"],
+input[type="password"]{
+	font-size:20px;
+	width:400px;
+	min-width:100px;
+	padding:5px;
+	border-radius:10px;
+}
+
+footer.footy{
+	background-color:#666;
+	padding-left:10%;
+}
+
+footer.footy h1{
+	color:white;
+	font-size: 35px;
+}
+
+footer.footy ul{
+	list-style:none;
+	text-align:left;
+	padding-left:0;
+}
+
+footer.footy ul li{
+	color:white;
+	font-size:25px;
+	line-height:1.5;
+}
+
+
+
+
+#section-test{
+	height:10px;
+	background-image: linear-gradient(to right, red,orange,yellow,green,blue,indigo,violet); 
+}
+
+@media screen and (max-width:680px){
+	ul.topnav li:not(:nth-child(1)){
+		display:none;
+	}
+	
+	ul.topnav li.menuitem-dropdown{
+		display:block;
+		float:right;
+	}
+	
+	ul.topnav.responsive li.menuitem-dropdown{
+		position:absolute;
+		top:0;
+		right:0;
+	} 
+	
+	ul.topnav.responsive{
+		position:relative;
+	} 
+
+	ul.topnav.responsive li{
+		display: inline;
+		float: none;
+	} 
+	
+	ul.topnav.responsive li a{
+		display: block;
+		text-align:left;
+	}
+	
+	
+	.col-25p,
+	.col-33p,
+	.col-50p,
+	.col-75p{
+		width:100%;
+		margin:0;
+	}
+	
+	div.mobile{
+		width:50%;
+		margin:0;
+	}
+	
+	footer.footy h1{
+		color:white;
+		font-size: 25px;
+	}	
+	
+	article p{
+		font-size:25px;
+	}
+	
+	div.col-left,
+	div.col-right{
+		margin:15px;
+	}
+	
+	div.box{
+		padding:5px;
+		display:block;
+	}
+	
+	input[type="text"],
+	input[type="password"]{
+		width:100%;
+	}
+	
+	div.icon-company img{
+		width:100%;
+		padding:5px;
+	}
+	
+	footer.footy ul li{
+		color:white;
+		font-size:20px;
+		line-height:1.5;
+	}
+	
+	.container-video iframe{
+		position:relative;
+		width:100%;
+		margin:0;
+		overflow:hidden;
+	}
+	
+}
